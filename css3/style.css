@@ -1,0 +1,88 @@
+@keyframes anime {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 1000px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box1 {
+  height: 200px;
+  width: 800px;
+  border: 5px solid powderblue;
+  overflow: scroll;
+}
+.box2 {
+  height: 200px;
+  width: 800px;
+  border: 5px solid rgb(133, 22, 90);
+  overflow: scroll;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  border: 5px dotted burlywood;
+  background-color: aqua;
+}
+
+.inner {
+  background-color: brown;
+  transform: rotate(50deg) scale(0.5);
+}
+
+.tran {
+  height: 200px;
+  width: 200px;
+  border: 5px solid lightslategray;
+  background-color: yellow;
+}
+
+.tran:hover {
+  background-color: rgb(0, 0, 0);
+  transition: background-color 5s ease 5s;
+}
+
+.animation-test {
+  background-color: aqua;
+  height: 500px;
+}
+.ball {
+  background-color: brown;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.animation-test:hover .ball {
+  animation: anime 5s ease 2s infinite alternate;
+}
+
+.bbooxx {
+  border: 3px solid greenyellow;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.display_calender {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2cm;
+}
+
+.item {
+  list-style: none;
+  background-color: aquamarine;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
